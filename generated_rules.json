@@ -1,0 +1,187 @@
+[
+  {
+    "rule_id": "MIT-001",
+    "description": "All mitigations must have a defined timeframe",
+    "validation_criteria": "Mitigation includes a specific deadline, completion date, or time period for implementation"
+  },
+  {
+    "rule_id": "MIT-002",
+    "description": "Mitigations without timeframes are invalid and should be rejected",
+    "validation_criteria": "System flags or rejects any mitigation that does not contain a timeframe component"
+  },
+  {
+    "rule_id": "MIT-003",
+    "description": "Timeframes must enable progress tracking and accountability",
+    "validation_criteria": "The specified timeframe allows for measurable milestones and assignment of responsible parties with clear deadlines"
+  },
+  {
+    "rule_id": "MIT-004",
+    "description": "Timeframes must align with risk proximity and impact dates",
+    "validation_criteria": "Mitigation timeframe is scheduled appropriately relative to when the risk is expected to occur or impact the project"
+  },
+  {
+    "rule_id": "MIT-005",
+    "description": "Timeframes must create urgency appropriate to risk severity",
+    "validation_criteria": "The timeframe reflects the criticality of the risk, with higher priority risks having shorter, more urgent timeframes"
+  },
+  {
+    "rule_id": "MIT-006",
+    "description": "Mitigations must be measurable within the defined timeframe",
+    "validation_criteria": "Success criteria and measurement points are defined within or at the end of the specified timeframe"
+  },
+  {
+    "rule_id": "MIT-007",
+    "description": "Timeframes enable effective resource allocation",
+    "validation_criteria": "The timeframe is specific enough to allow project teams to plan and allocate resources appropriately"
+  },
+  {
+    "rule_id": "MIT-008",
+    "description": "Continuous mitigations must define review periods or duration",
+    "validation_criteria": "For ongoing or continuous mitigations, specific review intervals or contract duration limits are defined"
+  },
+  {
+    "rule_id": "MIT-009",
+    "description": "Timeframes must support prioritization of mitigation efforts",
+    "validation_criteria": "The timeframe enables comparison and prioritization against other mitigations and project activities"
+  },
+  {
+    "rule_id": "MIT-010",
+    "description": "Mitigations must be mappable to project schedule",
+    "validation_criteria": "The timeframe allows integration into the project Work Package Delivery Framework (WPDF) or equivalent schedule"
+  },
+  {
+    "rule_id": "MIT-011",
+    "description": "Timeframes enable evaluation of mitigation effectiveness",
+    "validation_criteria": "The defined timeframe includes checkpoints to assess whether the mitigation is succeeding or requires adjustment"
+  },
+  {
+    "rule_id": "MIT-012",
+    "description": "Timeframes must demonstrate mitigation is fully thought through",
+    "validation_criteria": "The presence of a specific timeframe indicates consideration of when the risk will occur and when action must be taken"
+  },
+  {
+    "rule_id": "MIT-013",
+    "description": "Exception for distant risk proximity may allow flexible timeframes",
+    "validation_criteria": "If risk proximity is classified as distant, more flexible timeframe definitions may be acceptable with justification"
+  },
+  {
+    "rule_id": "MIT-014",
+    "description": "Risk managers must flag timeframe drift",
+    "validation_criteria": "System or process alerts risk managers when mitigation deadlines slip or when the window for effective action is closing"
+  },
+  {
+    "rule_id": "MIT-015",
+    "description": "Timeframes must support demonstration of risk reduction timeline",
+    "validation_criteria": "The timeframe enables clear reporting of when risk levels will be reduced and by how much"
+  },
+  {
+    "rule_id": "R001",
+    "description": "Strong mitigations must include specific, actionable tasks using action verbs",
+    "validation_criteria": "Mitigation contains clear action verbs (e.g., implement, reduce, eliminate, analyze, investigate) rather than passive terms like 'monitor'"
+  },
+  {
+    "rule_id": "R002",
+    "description": "Strong mitigations must have clearly defined ownership",
+    "validation_criteria": "Mitigation specifies who is responsible for executing the action"
+  },
+  {
+    "rule_id": "R003",
+    "description": "Strong mitigations must be timebound with specific deadlines",
+    "validation_criteria": "Mitigation includes a clear timeframe, due date, or duration for completion"
+  },
+  {
+    "rule_id": "R004",
+    "description": "Strong mitigations must have allocated budget or resources",
+    "validation_criteria": "Mitigation identifies required resources, costs, or budget allocation"
+  },
+  {
+    "rule_id": "R005",
+    "description": "Strong mitigations must define measurable or quantifiable outcomes",
+    "validation_criteria": "Mitigation specifies expected results using SMART criteria (Specific, Measurable, Achievable, Relevant, Time-bound)"
+  },
+  {
+    "rule_id": "R006",
+    "description": "Strong mitigations must actively reduce risk exposure",
+    "validation_criteria": "Mitigation clearly states how it will reduce either the probability or impact of the risk"
+  },
+  {
+    "rule_id": "R007",
+    "description": "Strong mitigations must target the root cause or risk trigger",
+    "validation_criteria": "Mitigation addresses the underlying cause of the risk, not just symptoms"
+  },
+  {
+    "rule_id": "R008",
+    "description": "Strong mitigations must be proactive rather than reactive",
+    "validation_criteria": "Mitigation involves preventive action taken before the risk materializes"
+  },
+  {
+    "rule_id": "R009",
+    "description": "Strong mitigations must go beyond business-as-usual activities",
+    "validation_criteria": "Mitigation represents additional or specific actions beyond routine day-to-day operations"
+  },
+  {
+    "rule_id": "R010",
+    "description": "If monitoring is included, it must specify what is monitored, thresholds, and trigger actions",
+    "validation_criteria": "When monitoring is mentioned, it includes: what is being monitored, what indicators to look for, and specific fallback actions if thresholds are breached"
+  },
+  {
+    "rule_id": "R011",
+    "description": "Strong mitigations must be trackable with progress metrics",
+    "validation_criteria": "Mitigation can be tracked through deliverables, milestones, or percentage completion"
+  },
+  {
+    "rule_id": "R012",
+    "description": "Strong mitigations must be clear enough for handover",
+    "validation_criteria": "Mitigation is documented with sufficient detail that another team member could execute it without additional clarification"
+  },
+  {
+    "rule_id": "R013",
+    "description": "Strong mitigations must include intervention mechanisms",
+    "validation_criteria": "Mitigation defines what intervention will be applied if the mitigation is not achieving intended results"
+  },
+  {
+    "rule_id": "R014",
+    "description": "Strong mitigations must be baselined and analyzed for effectiveness",
+    "validation_criteria": "Mitigation includes baseline measurements and method for tracking effectiveness against planned outcomes"
+  },
+  {
+    "rule_id": "R015",
+    "description": "Strong mitigations must treat the risk through defined strategies",
+    "validation_criteria": "Mitigation explicitly treats the risk through reduce, avoid, transfer, or accept strategies to reach tolerable levels"
+  },
+  {
+    "rule_id": "R001",
+    "description": "Response must be one of the predefined risk categories",
+    "validation_criteria": "Answer must exactly match one of: 'Schedule', 'Cost Overrun', 'Technical Uncertainty', 'Resource Availability', 'Supplier Delay', or 'External event'"
+  },
+  {
+    "rule_id": "R002",
+    "description": "Schedule risk variations are acceptable",
+    "validation_criteria": "Responses can be either 'Schedule' or 'Schedule risk' - both referring to schedule-related risks"
+  },
+  {
+    "rule_id": "R003",
+    "description": "Single category selection required",
+    "validation_criteria": "Only one risk category should be selected per response"
+  },
+  {
+    "rule_id": "R004",
+    "description": "Most frequently selected categories are Schedule and Resource Availability",
+    "validation_criteria": "Schedule-related risks and Resource Availability risks appear most commonly (approximately 38% and 34% respectively)"
+  },
+  {
+    "rule_id": "R005",
+    "description": "All six risk categories are valid and used",
+    "validation_criteria": "Responses include all categories with varying frequency: Schedule risk (19), Resource Availability (17), Technical Uncertainty (8), Supplier Delay (7), Cost Overrun (5), External event (0)"
+  },
+  {
+    "rule_id": "R006",
+    "description": "External event category is least commonly selected",
+    "validation_criteria": "External event appears 0 times in the response set, indicating it is either rare or not applicable to most project contexts"
+  },
+  {
+    "rule_id": "R007",
+    "description": "Case-sensitive category matching expected",
+    "validation_criteria": "Category names should match the capitalization pattern provided in the list"
+  }
+]

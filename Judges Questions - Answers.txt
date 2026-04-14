@@ -1,0 +1,68 @@
+Based on your solution architecture, here's how you can answer these questions:
+
+1. What metrics best assess the quality and reliability of AI-generated content?
+Your Answer:
+
+Rule Coverage Metrics: We track how many rules each risk/mitigation matches (stored in the classification logic). Good entries match ≥50% of rules or ≥2 rules, 'ok' entries match >0 rules, and 'poor' entries match 0 rules.
+
+Classification Distribution: We monitor the ratio of good/ok/poor classifications across training (70%), testing (15%), and validation (15%) splits to detect if the AI is consistently generating useful rules.
+
+Rule Deduplication Rate: We use fuzzy string matching (token_set_ratio with 98% threshold) and keyword-based grouping to measure how many duplicate/similar rules the LLM initially creates versus the final unique ruleset.
+
+SME Review Metrics: We track changes made in sme_rule_reviewer_cli.py (stored in self.changes_made) including edits, additions, deletions, and AI-suggested improvements - this shows how often human experts need to correct AI outputs.
+
+Keyword Match Accuracy: For each rule, we extract validation criteria keywords and measure how often they successfully identify relevant risks/mitigations in the user agent.
+
+Model Performance Metrics: Your logistic regression implementation provides classification reports and confusion matrices for validation/test sets, showing precision, recall, and F1 scores.
+
+2. What guard rails do you have against LLM hallucinations?
+Your Answer:
+
+Structured Output Validation: Rules must conform to a specific JSON schema with rule_id, description, and validation_criteria fields. The code validates JSON parsing and rejects malformed outputs.
+
+Response Extraction with Regex: In generate_rules(), you use regex to extract only the JSON array portion: re.search(r'(\[\s*{.*?}\s*\])', raw_text, re.DOTALL), ignoring any hallucinated text outside the structure.
+
+Fuzzy Deduplication: The 98% similarity threshold catches when the LLM generates nearly identical rules with slight variations, preventing redundant/hallucinated variations.
+
+Keyword-Based Grouping: Before LLM merging, you group rules by common keywords (min_common_keywords=2), ensuring the AI only merges genuinely similar rules rather than inventing connections.
+
+Human-in-the-Loop Validation: The SME Rule Reviewer agent allows experts to review all AI-generated rules, with AI suggestions that can be accepted or rejected.
+
+Automatic Backups: Every save operation in sme_rule_reviewer_cli.py creates a timestamped backup, allowing rollback if the LLM produces unreliable content.
+
+Multi-Rule Threshold: The User Risk Agent requires matching multiple rules (not just one) before classifying an entry as 'good', reducing the impact of any single hallucinated rule.
+
+3. At what points must a human approve, edit, or override model outputs?
+Your Answer:
+Required Human Intervention:
+
+Initial Rule Generation (optional but recommended): After the Jupyter notebook generates rules from survey responses, SMEs should review generated_rules.json using the Rule Reviewer agent.
+
+SME Rule Review (sme_rule_reviewer_cli.py):
+
+SMEs can list, filter, edit, add, or delete any rule
+AI suggestions for improvements require human approval before application
+All changes are tracked and require explicit save command
+Poor-Quality Risk Entries (User_risk_agent.py):
+
+When users receive 'poor' classification, they must manually rewrite their risk/mitigation
+System provides template suggestions, but human must craft the final entry
+No automated correction - human must understand and apply feedback
+Rule Merging Decisions: In the LLM-based deduplication process, while the AI suggests merged rules, the final ruleset should be reviewed by SMEs before deployment.
+
+Optional Human Override Points:
+
+Classification Threshold Adjustment: Humans can modify the classification logic thresholds (currently 50% of rules or ≥2 matches for 'good')
+
+Train/Test/Val Split Review: While automated at 70/15/15, humans can inspect the split files to ensure balanced representation
+
+Keyword Criteria Validation: SMEs should periodically review validation_criteria to ensure keywords remain relevant and aren't missing critical terms
+
+No Human Required:
+
+Automatic fuzzy deduplication (98% threshold)
+Keyword extraction and grouping
+Train/test/validation splitting
+Excel output generation with timestamps
+Automatic backups
+The solution emphasizes human oversight at critical decision points (rule quality, classification boundaries) while automating repetitive tasks (deduplication, splitting, formatting).

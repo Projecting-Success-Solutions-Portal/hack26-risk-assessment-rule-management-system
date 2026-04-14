@@ -1,0 +1,42 @@
+[
+  {
+    "rule_id": "R001",
+    "description": "Schedule risk is the most frequently identified category, indicating it is the primary concern across projects",
+    "validation_criteria": "When assessing project risks, prioritize schedule-related impacts first. If a risk affects project timelines, milestones, or delivery dates, categorize it as Schedule risk."
+  },
+  {
+    "rule_id": "R002",
+    "description": "Resource Availability is the second most common concern, suggesting workforce and resource constraints are critical",
+    "validation_criteria": "Evaluate whether the risk involves lack of personnel, equipment, or other resources needed to complete tasks. If resource allocation or availability is the primary driver, categorize as Resource Availability."
+  },
+  {
+    "rule_id": "R003",
+    "description": "Technical Uncertainty represents unknown or unproven technology, methods, or approaches that create project risk",
+    "validation_criteria": "Identify risks stemming from new technologies, unproven methods, technical complexity, or uncertainty about feasibility. These should be categorized as Technical Uncertainty regardless of secondary impacts."
+  },
+  {
+    "rule_id": "R004",
+    "description": "Supplier Delay is recognized as a distinct external dependency risk affecting project execution",
+    "validation_criteria": "When risks involve third-party vendors, suppliers, or external contractors missing deadlines or failing to deliver, categorize as Supplier Delay rather than general Schedule risk."
+  },
+  {
+    "rule_id": "R005",
+    "description": "Cost Overrun is identified less frequently, suggesting it may be viewed as a consequence rather than a primary risk category",
+    "validation_criteria": "Only categorize as Cost Overrun when budget exceedance is the primary risk driver, not when costs are a secondary effect of schedule, resource, or technical issues."
+  },
+  {
+    "rule_id": "R006",
+    "description": "Human risk assessors tend to focus on operational and execution risks over financial risks",
+    "validation_criteria": "When multiple categories apply, prioritize operational categories (Schedule, Resource, Technical, Supplier) over financial categories (Cost Overrun) unless cost is explicitly the main concern."
+  },
+  {
+    "rule_id": "R007",
+    "description": "External events are rarely selected, indicating most risks are viewed as internal or controllable factors",
+    "validation_criteria": "Reserve External event category only for truly uncontrollable external factors like natural disasters, regulatory changes, or market shifts. Do not use for supplier issues or resource problems."
+  },
+  {
+    "rule_id": "R008",
+    "description": "Risk categorization follows a hierarchy: Schedule and Resource issues are most visible, followed by Technical and Supplier concerns, with Cost and External events as residual categories",
+    "validation_criteria": "Apply a decision hierarchy: first check for Schedule impact, then Resource constraints, then Technical challenges, then Supplier dependencies, and finally Cost or External factors only if others don't apply."
+  }
+]

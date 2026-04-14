@@ -1,0 +1,197 @@
+[
+  {
+    "rule_id": "R001",
+    "description": "Register entries without clear triggers are likely uncertainties rather than risks",
+    "validation_criteria": "Check if entry lacking a trigger is classified as 'uncertainty' or 'worry' rather than a defined risk"
+  },
+  {
+    "rule_id": "R002",
+    "description": "Entries without clear triggers indicate the risk is not properly defined or understood",
+    "validation_criteria": "Verify that entries without triggers have been flagged for further definition, clarification, or reassessment"
+  },
+  {
+    "rule_id": "R003",
+    "description": "Register entries without clear triggers are not actionable or manageable risks",
+    "validation_criteria": "Confirm that entries lacking triggers cannot have effective mitigation strategies assigned and should be reworked or removed"
+  },
+  {
+    "rule_id": "R004",
+    "description": "Entries without clear triggers may actually be issues rather than risks",
+    "validation_criteria": "Assess if entry without trigger describes something already occurring (issue) versus something that might occur (risk)"
+  },
+  {
+    "rule_id": "R005",
+    "description": "Register entries without clear triggers may be poorly scoped or incompletely assessed",
+    "validation_criteria": "Check if entry was inadequately identified during initial risk assessment phases and requires re-scoping"
+  },
+  {
+    "rule_id": "R006",
+    "description": "Entries without clear triggers should not be classified as risks in the register",
+    "validation_criteria": "Verify that entries lacking defined triggers are either reclassified, removed, or sent back for proper risk identification"
+  },
+  {
+    "rule_id": "R007",
+    "description": "Register entries without clear triggers may represent business-as-usual activities",
+    "validation_criteria": "Determine if entry without trigger describes routine operational matters that should be managed outside the risk register"
+  },
+  {
+    "rule_id": "R008",
+    "description": "Entries without clear triggers may be generic or broad catch-all entries",
+    "validation_criteria": "Identify if entry is too vague or high-level and requires decomposition into specific, triggered risk events"
+  },
+  {
+    "rule_id": "R009",
+    "description": "Register entries without clear triggers make proactive risk management impossible",
+    "validation_criteria": "Confirm that entries lacking triggers have no defined early warning indicators, preventing timely response"
+  },
+  {
+    "rule_id": "R010",
+    "description": "Entries without clear triggers may represent financial contingency or reserve items",
+    "validation_criteria": "Check if entry is actually a budget contingency item misclassified as a risk entry"
+  },
+  {
+    "rule_id": "R011",
+    "description": "Register entries without clear triggers indicate poor risk ownership or review",
+    "validation_criteria": "Verify if lack of trigger indicates inadequate oversight by project or work package managers"
+  },
+  {
+    "rule_id": "R012",
+    "description": "Entries without clear triggers are built on assumptions and incomplete information",
+    "validation_criteria": "Assess if entry requires further investigation to establish factual basis and specific trigger conditions"
+  },
+  {
+    "rule_id": "R013",
+    "description": "Register entries without clear triggers represent incomplete or poorly written risk statements",
+    "validation_criteria": "Evaluate if risk statement follows proper format (cause-risk-effect) and includes specific triggering event"
+  },
+  {
+    "rule_id": "R014",
+    "description": "Entries without clear triggers lead to reactive rather than proactive mitigation",
+    "validation_criteria": "Confirm that absence of trigger prevents planned, anticipatory response and forces reactive management"
+  },
+  {
+    "rule_id": "MTG-001",
+    "description": "Mitigation actions must have a defined timeframe",
+    "validation_criteria": "Every mitigation action must include a specific deadline, date range, or schedule for implementation"
+  },
+  {
+    "rule_id": "MTG-002",
+    "description": "Mitigations without timeframes are invalid",
+    "validation_criteria": "Reject or flag any mitigation action that lacks a temporal component as invalid or incomplete"
+  },
+  {
+    "rule_id": "MTG-003",
+    "description": "Timeframes enable measurability",
+    "validation_criteria": "Mitigation effectiveness must be measurable against the specified timeframe to track progress and completion"
+  },
+  {
+    "rule_id": "MTG-004",
+    "description": "Timeframes ensure accountability",
+    "validation_criteria": "A defined timeframe must be present to assign responsibility and hold parties accountable for mitigation execution"
+  },
+  {
+    "rule_id": "MTG-005",
+    "description": "Timeframes create urgency",
+    "validation_criteria": "Mitigation timeframes must communicate the urgency and priority level to ensure timely action"
+  },
+  {
+    "rule_id": "MTG-006",
+    "description": "Timeframes align with risk event timing",
+    "validation_criteria": "Mitigation timeframes must align with the risk's impact dates, proximity, and horizon to be effective"
+  },
+  {
+    "rule_id": "MTG-007",
+    "description": "Timeframes enable progress tracking",
+    "validation_criteria": "Mitigation timeframes must allow for monitoring of start dates, milestones, and completion status"
+  },
+  {
+    "rule_id": "MTG-008",
+    "description": "Timeframes support resource allocation",
+    "validation_criteria": "Defined timeframes must enable proper allocation and scheduling of resources required for mitigation"
+  },
+  {
+    "rule_id": "MTG-009",
+    "description": "Timeframes enable risk reduction planning",
+    "validation_criteria": "Mitigation timeframes must be factored into the overall risk reduction plan and timeline"
+  },
+  {
+    "rule_id": "MTG-010",
+    "description": "Timeframes prevent drift",
+    "validation_criteria": "Risk managers must flag mitigations that drift past critical deadlines and assess if the opportunity has passed"
+  },
+  {
+    "rule_id": "MTG-011",
+    "description": "Exception for continuous mitigations",
+    "validation_criteria": "Ongoing or continuous risk management strategies may span contract duration but must clearly indicate this is intentional"
+  },
+  {
+    "rule_id": "MTG-012",
+    "description": "Exception for distant risk proximity",
+    "validation_criteria": "Mitigations for risks with distant proximity may have flexible timeframes but must still define approximate timing"
+  },
+  {
+    "rule_id": "MTG-013",
+    "description": "Timeframes enable effectiveness evaluation",
+    "validation_criteria": "Mitigation timeframes must allow for assessment of whether the mitigation succeeded or requires adjustments"
+  },
+  {
+    "rule_id": "MTG-014",
+    "description": "Baseline actions for duration-based mitigations",
+    "validation_criteria": "For mitigations spanning contract duration, a baseline level of action or risk transfer must already be established"
+  },
+  {
+    "rule_id": "MTG-015",
+    "description": "Timeframes support prioritization",
+    "validation_criteria": "Defined timeframes must enable proactive prioritization of mitigation efforts based on urgency and sequence"
+  },
+  {
+    "rule_id": "R001",
+    "description": "Response must be one of the predefined risk categories",
+    "validation_criteria": "Answer must exactly match one of: 'Schedule risk', 'Cost Overrun', 'Technical Uncertainty', 'Resource Availability', 'Supplier Delay', or 'External event'"
+  },
+  {
+    "rule_id": "R002",
+    "description": "Schedule risk is the most frequently selected category",
+    "validation_criteria": "Schedule risk appears in 34% of responses (17 out of 50), making it the most common selection"
+  },
+  {
+    "rule_id": "R003",
+    "description": "Resource Availability is the second most common category",
+    "validation_criteria": "Resource Availability appears in 34% of responses (17 out of 50), tied with Schedule risk as most common"
+  },
+  {
+    "rule_id": "R004",
+    "description": "Technical Uncertainty is a frequently selected category",
+    "validation_criteria": "Technical Uncertainty appears in 16% of responses (8 out of 50)"
+  },
+  {
+    "rule_id": "R005",
+    "description": "Supplier Delay is a moderately selected category",
+    "validation_criteria": "Supplier Delay appears in 14% of responses (7 out of 50)"
+  },
+  {
+    "rule_id": "R006",
+    "description": "Cost Overrun is a less frequently selected category",
+    "validation_criteria": "Cost Overrun appears in 10% of responses (5 out of 50)"
+  },
+  {
+    "rule_id": "R007",
+    "description": "External event is rarely or never selected",
+    "validation_criteria": "External event appears in 0% of responses (0 out of 50)"
+  },
+  {
+    "rule_id": "R008",
+    "description": "Response must be a single category selection",
+    "validation_criteria": "Each response contains only one risk category, not multiple categories"
+  },
+  {
+    "rule_id": "R009",
+    "description": "Category name variations are acceptable",
+    "validation_criteria": "Both 'Schedule risk' and 'Schedule' appear to be accepted as valid responses for the schedule category"
+  },
+  {
+    "rule_id": "R010",
+    "description": "Response must be text-based category name",
+    "validation_criteria": "Response is the category name as a string, not a numerical code or other format"
+  }
+]
