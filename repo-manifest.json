@@ -1,0 +1,125 @@
+{
+  "event": {
+    "name": "hack26",
+    "slug": "hack26",
+    "repo": "hack26",
+    "topics": [
+      "solution-centre",
+      "hack26",
+      "python",
+      "azure",
+      "power-bi",
+      "github",
+      "hackathon",
+      "innovation",
+      "data",
+      "artificial-intelligence",
+      "prototyping",
+      "collaboration",
+      "challenge1",
+      "large-language-models",
+      "machine-learning",
+      "natural-language-processing",
+      "risk-management",
+      "tacit-knowledge",
+      "heuristics",
+      "project-risk"
+    ],
+    "technologies": [
+      "python",
+      "azure",
+      "power-bi",
+      "github",
+      "large-language-models",
+      "machine-learning",
+      "natural-language-processing",
+      "streamlit",
+      "reportlab",
+      "pandas",
+      "microsoft-excel",
+      "dataverse",
+      "power-apps",
+      "power-automate",
+      "copilot-studio",
+      "jupyter",
+      "google-gemini",
+      "openpyxl",
+      "fuzzywuzzy",
+      "json",
+      "microsoft-copilot",
+      "office-365",
+      "project-scheduling-tools",
+      "microsoft-office",
+      "primavera-p6",
+      "document-analysis",
+      "knowledge-bases",
+      "search",
+      "pdfplumber",
+      "sentence-transformers"
+    ]
+  },
+  "visibility": {
+    "event_repo": "public",
+    "team_repos": "public"
+  },
+  "repos": [
+    {
+      "type": "team",
+      "challenge_name": "Risk Insight Ignition: Making Tacit Knowledge Tangible",
+      "challenge_description": "This challenge, presented by Thales, focuses on improving project risk management by capturing and applying subject matter expert (SME) heuristics that are typically tacit and inconsistently recorded. Teams explore how large language models and related AI techniques can codify SME insight, apply it to existing risk registers, and enhance the quality, consistency and usefulness of risk identification and mitigation data, with an emphasis on learning and refinement through expert feedback.",
+      "challenge_slug": "challenge1",
+      "team_name": "Risk Assessment Rule Management System",
+      "team_slug": "d",
+      "name": "hack26-risk-REDACTED",
+      "child_repo_path": "submissions/hack26-challenge1-d",
+      "url": "https://github.com/Projecting-Success-Solutions-Portal/hack26-risk-REDACTED.git",
+      "description": "The team built a rule\u2011driven risk assessment system that converts SME survey responses into structured, validated heuristics. Using LLMs, fuzzy matching, and human\u2011in\u2011the\u2011loop review, they generate, deduplicate, and govern high\u2011quality risk and mitigation rules that can be applied consistently across risk registers.",
+      "key_outcomes": "Improved consistency and clarity of risk and mitigation definitions; reduced duplication and ambiguity in heuristics; stronger guardrails against low\u2011quality or hallucinated AI outputs; faster standardisation of SME knowledge into reusable rules.",
+      "important_files": [
+        {
+          "path": "deduplicate_rules.ipynb",
+          "purpose": "Notebook for identifying, deduplicating, and merging similar heuristic rules using fuzzy matching."
+        },
+        {
+          "path": "generated_rules.json",
+          "purpose": "Structured JSON output of validated risk and mitigation rules."
+        },
+        {
+          "path": "Categorisation of Risk Heuristic Survey Questions.docx",
+          "purpose": "Defines categories used to classify SME heuristic survey responses."
+        }
+      ],
+      "required_fields": {
+        "summary": "A governed rule\u2011management system that transforms SME heuristics into consistent, reusable risk assessment rules.",
+        "problem": "SME knowledge about good and poor risks and mitigations is fragmented, duplicated, and inconsistently applied.",
+        "approach": "Use LLMs to extract rules from SME survey data, deduplicate them with fuzzy matching, and validate outputs through structured schemas and human review.",
+        "deliverables": "Rule generation notebooks, deduplication logic, categorised heuristic rulesets in JSON, and documentation of rule governance."
+      },
+      "thumbnail_path": "Screenshot_20251022_130235_LinkedIn.jpg",
+      "topics": [
+        "solution-centre",
+        "hack26",
+        "challenge1",
+        "python",
+        "jupyter",
+        "fuzzywuzzy",
+        "json",
+        "large-language-models",
+        "risk-management",
+        "heuristics",
+        "rule-engine",
+        "data-quality",
+        "governance",
+        "human-in-the-loop"
+      ],
+      "technologies": [
+        "python",
+        "jupyter",
+        "fuzzywuzzy",
+        "json",
+        "large-language-models"
+      ],
+      "members": []
+    }
+  ]
+}

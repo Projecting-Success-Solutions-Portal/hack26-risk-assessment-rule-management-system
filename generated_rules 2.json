@@ -1,0 +1,42 @@
+[
+  {
+    "rule_id": "R001",
+    "description": "Schedule risk is the most frequently selected category, indicating it is the primary concern across diverse project contexts",
+    "validation_criteria": "When evaluating project risks, prioritize schedule-related impacts first. If a risk can affect project timelines, milestones, or delivery dates, classify it as Schedule risk with high priority."
+  },
+  {
+    "rule_id": "R002",
+    "description": "Resource Availability is the second most common risk category, suggesting human and material resource constraints are critical factors",
+    "validation_criteria": "Assess whether the risk involves staffing levels, skill availability, equipment access, or capacity constraints. If resource acquisition or retention is threatened, classify as Resource Availability risk."
+  },
+  {
+    "rule_id": "R003",
+    "description": "Technical Uncertainty ranks as a significant risk factor, reflecting concerns about technological feasibility and implementation challenges",
+    "validation_criteria": "Identify risks involving unproven technologies, integration complexity, technical specifications, or solution viability. Classify as Technical Uncertainty when outcomes depend on technical problem-solving."
+  },
+  {
+    "rule_id": "R004",
+    "description": "Supplier Delay appears moderately, indicating dependency on external vendors and third-party delivery timelines",
+    "validation_criteria": "Evaluate risks stemming from vendor performance, procurement delays, supply chain disruptions, or third-party dependencies. Tag as Supplier Delay when external parties control critical path items."
+  },
+  {
+    "rule_id": "R005",
+    "description": "Cost Overrun is selected less frequently, suggesting budget concerns are secondary to schedule and resource issues",
+    "validation_criteria": "Classify as Cost Overrun only when the primary impact is financial variance, budget exhaustion, or funding shortfalls, rather than time or resource constraints that may indirectly affect costs."
+  },
+  {
+    "rule_id": "R006",
+    "description": "External event category is notably absent, indicating respondents focus on controllable internal factors rather than external disruptions",
+    "validation_criteria": "External event classification should be reserved for risks genuinely outside organizational control such as regulatory changes, natural disasters, or market shifts. Internal controllable factors should use other categories."
+  },
+  {
+    "rule_id": "R007",
+    "description": "Risk categorization shows clustering patterns suggesting practitioners group related concerns under operational categories",
+    "validation_criteria": "When multiple risk dimensions overlap, prioritize the category that represents the most direct and immediate impact. Default to Schedule risk when timing is the critical constraint."
+  },
+  {
+    "rule_id": "R008",
+    "description": "The distribution indicates a preference for tangible, measurable risk categories over abstract or strategic ones",
+    "validation_criteria": "Select risk categories that have clear, observable metrics and measurable impacts. Avoid ambiguous classifications when a more concrete alternative exists."
+  }
+]
